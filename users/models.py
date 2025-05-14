@@ -13,6 +13,7 @@ class User(AbstractUser):
     last_login_ip = models.GenericIPAddressField('最后登录IP', null=True, blank=True)
     created_at = models.DateTimeField('创建时间', default=timezone.now)
     updated_at = models.DateTimeField('更新时间', auto_now=True)
+    token_version = models.IntegerField('Token版本号', default=0)  # 用于使旧token失效
 
     class Meta:
         verbose_name = '用户'
@@ -22,6 +23,11 @@ class User(AbstractUser):
 
     def __str__(self):
         return self.username
+
+    def increment_token_version(self):
+        """增加token版本号，使所有旧token失效"""
+        self.token_version += 1
+        self.save()
 
 class EncryptedData(models.Model):
     """加密数据模型"""
