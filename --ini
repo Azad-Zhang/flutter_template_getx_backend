@@ -1,0 +1,624 @@
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 16:50:48 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa1ffd0 pid: 60768 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 60768)
+spawned uWSGI worker 1 (pid: 60770, cores: 2)
+spawned uWSGI worker 2 (pid: 60772, cores: 2)
+spawned uWSGI worker 3 (pid: 60774, cores: 2)
+spawned uWSGI worker 4 (pid: 60776, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 16:51:24 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8085 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+  File "/www/wwwroot/template_backend/uwsgi.ini", line 2
+    socket = 127.0.0.1:8085
+                  ^^
+SyntaxError: invalid syntax
+failed to compile /www/wwwroot/template_backend/uwsgi.ini
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 60983)
+spawned uWSGI worker 1 (pid: 60984, cores: 2)
+spawned uWSGI worker 2 (pid: 60985, cores: 2)
+spawned uWSGI worker 3 (pid: 60986, cores: 2)
+spawned uWSGI worker 4 (pid: 60987, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 16:51:41 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8085 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+  File "/www/wwwroot/template_backend/uwsgi.ini", line 2
+    socket = 127.0.0.1:8085
+                  ^^
+SyntaxError: invalid syntax
+failed to compile /www/wwwroot/template_backend/uwsgi.ini
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 61084)
+spawned uWSGI worker 1 (pid: 61085, cores: 2)
+spawned uWSGI worker 2 (pid: 61086, cores: 2)
+spawned uWSGI worker 3 (pid: 61087, cores: 2)
+spawned uWSGI worker 4 (pid: 61088, cores: 2)
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:01:38 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+  File "/www/wwwroot/template_backend/uwsgi.ini", line 2
+    socket = 127.0.0.1:8080
+                  ^^
+SyntaxError: invalid syntax
+failed to compile /www/wwwroot/template_backend/uwsgi.ini
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 64557)
+spawned uWSGI worker 1 (pid: 64558, cores: 2)
+spawned uWSGI worker 2 (pid: 64559, cores: 2)
+spawned uWSGI worker 3 (pid: 64560, cores: 2)
+spawned uWSGI worker 4 (pid: 64561, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:18:54 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+  File "/www/wwwroot/template_backend/uwsgi.ini", line 2
+    socket = 127.0.0.1:8000
+                  ^^
+SyntaxError: invalid syntax
+failed to compile /www/wwwroot/template_backend/uwsgi.ini
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 70546)
+spawned uWSGI worker 1 (pid: 70547, cores: 2)
+spawned uWSGI worker 2 (pid: 70548, cores: 2)
+spawned uWSGI worker 3 (pid: 70549, cores: 2)
+spawned uWSGI worker 4 (pid: 70550, cores: 2)
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:28:42 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+  File "/www/wwwroot/template_backend/uwsgi.ini", line 2
+    socket = 127.0.0.1:8080
+                  ^^
+SyntaxError: invalid syntax
+failed to compile /www/wwwroot/template_backend/uwsgi.ini
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 74332)
+spawned uWSGI worker 1 (pid: 74333, cores: 2)
+spawned uWSGI worker 2 (pid: 74334, cores: 2)
+spawned uWSGI worker 3 (pid: 74335, cores: 2)
+spawned uWSGI worker 4 (pid: 74336, cores: 2)
+invalid request block size: 21573 (max 4096)...skip
+invalid request block size: 16709 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:37:43 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa1ffd0 pid: 77379 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 77379)
+spawned uWSGI worker 1 (pid: 77380, cores: 2)
+spawned uWSGI worker 2 (pid: 77382, cores: 2)
+spawned uWSGI worker 3 (pid: 77384, cores: 2)
+spawned uWSGI worker 4 (pid: 77386, cores: 2)
+invalid request block size: 21327 (max 4096)...skip
+invalid request block size: 21327 (max 4096)...skip
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:47:03 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0xa1ffd0 pid: 80622 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 80622)
+spawned uWSGI worker 1 (pid: 80623, cores: 2)
+spawned uWSGI worker 2 (pid: 80625, cores: 2)
+spawned uWSGI worker 3 (pid: 80627, cores: 2)
+spawned uWSGI worker 4 (pid: 80629, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 17:47:09 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 08:49:55
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.13.3 (main, May 18 2025, 16:32:02) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0xa1ffd0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xa1ffd0 pid: 80687 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 80687)
+spawned uWSGI worker 1 (pid: 80688, cores: 2)
+spawned uWSGI worker 2 (pid: 80690, cores: 2)
+spawned uWSGI worker 3 (pid: 80692, cores: 2)
+spawned uWSGI worker 4 (pid: 80694, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 18:07:30 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 10:07:07
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.11.6 (main, Mar 10 2025, 17:57:18) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0x7fa5aad1e558
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fa5aad1e558 pid: 88614 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 88614)
+spawned uWSGI worker 1 (pid: 88615, cores: 2)
+spawned uWSGI worker 2 (pid: 88617, cores: 2)
+spawned uWSGI worker 3 (pid: 88619, cores: 2)
+spawned uWSGI worker 4 (pid: 88621, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 18:08:00 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 10:07:07
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.11.6 (main, Mar 10 2025, 17:57:18) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0x7fbc8ed1e558
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7fbc8ed1e558 pid: 88775 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 88775)
+spawned uWSGI worker 1 (pid: 88777, cores: 2)
+spawned uWSGI worker 2 (pid: 88779, cores: 2)
+spawned uWSGI worker 3 (pid: 88781, cores: 2)
+spawned uWSGI worker 4 (pid: 88783, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 18:12:18 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 10:07:07
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.11.6 (main, Mar 10 2025, 17:57:18) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0x7faf19d1e558
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7faf19d1e558 pid: 90451 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 90451)
+spawned uWSGI worker 1 (pid: 90455, cores: 2)
+spawned uWSGI worker 2 (pid: 90457, cores: 2)
+spawned uWSGI worker 3 (pid: 90459, cores: 2)
+spawned uWSGI worker 4 (pid: 90461, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 18:17:14 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 10:07:07
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.11.6 (main, Mar 10 2025, 17:57:18) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0x7f6b2df1e558
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7f6b2df1e558 pid: 92220 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 92220)
+spawned uWSGI worker 1 (pid: 92221, cores: 2)
+spawned uWSGI worker 2 (pid: 92223, cores: 2)
+spawned uWSGI worker 3 (pid: 92225, cores: 2)
+spawned uWSGI worker 4 (pid: 92227, cores: 2)
+...brutally killing workers...
+*** Starting uWSGI 2.0.29 (64bit) on [Sun May 18 18:19:10 2025] ***
+compiled with version: 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1) on 18 May 2025 10:07:07
+os: Linux-6.6.47-12.oc9.x86_64 #1 SMP PREEMPT_DYNAMIC Tue Sep 24 16:15:42 CST 2024
+nodename: VM-12-8-opencloudos
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 4
+current working directory: /www/wwwroot/template_backend
+writing pidfile to /www/server/python_project/vhost/pids/template_backend.pid
+detected binary path: /www/server/pyporject_evn/template_backend_venv/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /www/wwwroot/template_backend
+your processes number limit is 14471
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8080 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.11.6 (main, Mar 10 2025, 17:57:18) [GCC 12.3.1 20230912 (OpenCloudOS 12.3.1.3-1)]
+Python main interpreter initialized at 0x7fc38c51e558
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 1031270 bytes (1007 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added /www/wwwroot/template_backend/ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x7fc38c51e558 pid: 92929 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 92929)
+spawned uWSGI worker 1 (pid: 92930, cores: 2)
+spawned uWSGI worker 2 (pid: 92932, cores: 2)
+spawned uWSGI worker 3 (pid: 92934, cores: 2)
+spawned uWSGI worker 4 (pid: 92936, cores: 2)
+...brutally killing workers...
