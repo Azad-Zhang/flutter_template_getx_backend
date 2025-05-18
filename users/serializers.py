@@ -47,6 +47,18 @@ class UserCreateSerializer(serializers.ModelSerializer):
         fields = ('username', 'email', 'password', 'phone', 'bio', 'public_key', 'encrypted_private_key')
 
     def create(self, validated_data):
+        phone = validated_data.get('phone')
+        if phone and not str(phone).startswith('gAAAAA'):
+            f = Fernet(settings.ENCRYPTION_KEY)
+            validated_data['phone'] = f.encrypt(phone.encode()).decode()
+        bio = validated_data.get('bio')
+        if bio and not str(bio).startswith('gAAAAA'):
+            f = Fernet(settings.ENCRYPTION_KEY)
+            validated_data['bio'] = f.encrypt(bio.encode()).decode()
+        email = validated_data.get('email')
+        if email and not str(email).startswith('gAAAAA'):
+            f = Fernet(settings.ENCRYPTION_KEY)
+            validated_data['email'] = f.encrypt(email.encode()).decode()
         user = User.objects.create_user(**validated_data)
         return user
 

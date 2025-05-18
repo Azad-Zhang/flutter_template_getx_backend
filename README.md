@@ -9,7 +9,6 @@
 - Django REST framework 3.14+
 - PostgreSQL 13
 - Nginx
-- Docker & Docker Compose
 
 ## 主要功能
 
@@ -19,7 +18,6 @@
 - RESTful API
 - CORS 支持
 - 数据库迁移
-- Docker 容器化部署
 
 ## 项目结构
 
@@ -32,9 +30,7 @@
 ├── nginx/           # Nginx 配置
 ├── template/        # 模板文件
 ├── manage.py        # Django 管理脚本
-├── requirements.txt # 项目依赖
-├── Dockerfile       # Docker 构建文件
-└── docker-compose.yml # Docker Compose 配置
+└── requirements.txt # 项目依赖
 ```
 
 ## 本地开发环境设置
@@ -75,23 +71,6 @@ python manage.py migrate
 6. 启动开发服务器
 ```bash
 python manage.py runserver
-```
-
-## Docker 部署
-
-1. 构建并启动容器
-```bash
-docker-compose up --build
-```
-
-2. 运行数据库迁移
-```bash
-docker-compose exec web python manage.py migrate
-```
-
-3. 创建超级用户（可选）
-```bash
-docker-compose exec web python manage.py createsuperuser
 ```
 
 ## API 文档

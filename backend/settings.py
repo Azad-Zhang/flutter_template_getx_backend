@@ -15,6 +15,7 @@ from datetime import timedelta
 from cryptography.fernet import Fernet
 import base64
 import os
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -27,9 +28,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--u&%=%mmytd!pz3*x&h5zq^)@#$bqc^0349*19a)k^yj87ai2)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS', 'localhost,127.0.0.1').split(',')
 
 
 # Application definition
@@ -85,10 +86,17 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default='sqlite:///' + str(BASE_DIR / 'db.sqlite3'),
+        conn_max_age=600,
+        conn_health_checks=True
+    )
+}
+
+# 添加数据库连接池配置
+DATABASES['default']['CONN_MAX_AGE'] = 600
+DATABASES['default']['OPTIONS'] = {
+    'connect_timeout': 10,
 }
 
 
@@ -138,8 +146,23 @@ STATIC_ROOT = BASE_DIR / 'static'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # CORS设置
-CORS_ALLOW_ALL_ORIGINS = True  # 开发环境下允许所有源
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
+
+# 添加安全配置
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
+
+# 添加静态文件配置
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# 添加媒体文件配置
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # REST Framework设置
 REST_FRAMEWORK = {
@@ -168,22 +191,17 @@ SIMPLE_JWT = {
 AUTH_USER_MODEL = 'users.User'
 
 # HTTPS设置
-if not DEBUG:  # 只在生产环境中启用HTTPS
+if not DEBUG:
     SECURE_SSL_REDIRECT = True
     SESSION_COOKIE_SECURE = True
     CSRF_COOKIE_SECURE = True
     SECURE_BROWSER_XSS_FILTER = True
     SECURE_CONTENT_TYPE_NOSNIFF = True
     X_FRAME_OPTIONS = 'DENY'
-else:  # 开发环境禁用HTTPS
+else:
     SECURE_SSL_REDIRECT = False
     SESSION_COOKIE_SECURE = False
     CSRF_COOKIE_SECURE = False
-
-# 开发环境SSL证书配置
-if DEBUG:
-    os.environ['SSL_CERT_FILE'] = os.path.join(BASE_DIR, 'cert.pem')
-    os.environ['SSL_KEY_FILE'] = os.path.join(BASE_DIR, 'key.pem')
 
 # 加密配置
 ENCRYPTION_KEY = Fernet.generate_key()  # 生成一个有效的Fernet密钥

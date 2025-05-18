@@ -28,9 +28,18 @@ class UserViewSet(viewsets.ModelViewSet):
         return UserSerializer
 
     def get_permissions(self):
-        if self.action in ['create', 'generate_keys', 'recover_keys']:
+        if self.action == 'create':
             return [permissions.AllowAny()]
         return super().get_permissions()
+
+    def create(self, request, *args, **kwargs):
+        serializer = self.get_serializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        user = serializer.save()
+        return APIResponse.success(
+            data=UserSerializer(user).data,
+            message='用户注册成功'
+        )
 
     @action(detail=False, methods=['get'])
     def me(self, request):
